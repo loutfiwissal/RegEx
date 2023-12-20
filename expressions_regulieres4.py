@@ -34,3 +34,7 @@ produitP9 = re.findall(pattern_produits_P9,exemple)
 print("-P9 is composed of 3 products are:")
 print(produitP9)
 
+P2 = re.findall(r"(P\d+ is a product composed+) of P[^2]", exemple)
+print("-products that do not contain P2 are:")
+print(P2)
+
